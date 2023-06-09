@@ -4,6 +4,7 @@ import SignIn from "./pages/SignIn";
 import CheckExams from "./pages/CheckExams";
 import StudentExam from "./pages/StudentExam";
 import { Routes,Route } from "react-router-dom";
+import ShowData from "./pages/ShowData";
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage/>}/>
       <Route path="/SignIn" element={<SignIn/>}/>
-      <Route path="/CheckExams" element={<CheckExams/>}/>
+      <Route path="/ShowData" element={<ShowData/>}/>
       <Route path="/StudentExam" element={<StudentExam/>}/>
 
 

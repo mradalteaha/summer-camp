@@ -15,10 +15,9 @@ function HomePage() {
     return (
       <div> 
         <Heading />
-        <Container>
-        {
-        <WelcomeComponent/>}
-        </Container>
+       
+        <WelcomeComponent/>
+        
           
         <Footer />
       </div>

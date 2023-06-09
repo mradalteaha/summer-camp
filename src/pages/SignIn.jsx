@@ -28,7 +28,7 @@ function SignIn() {
         setAdminLog(true)
         //console.log("succss")
 
-        navigate("/CheckExams");
+        navigate("/ShowData");
       }
       else{
         alert ("المعلومات التي ادخلتها خاطئة ")

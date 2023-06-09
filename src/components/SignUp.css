@@ -11,8 +11,8 @@ h1 {
   
   input {
     border: 1px solid rgba(252, 252, 252, 0.4);
-    background-color: rgba(190, 146, 0, 0.6);
-    width: 250px;
+    background-color: rgba(201, 189, 146, 0.6);
+    width: 350px;
     border-radius: 3px;
     font-family: "Source Sans Pro", sans-serif;
     padding: 10px 15px;
@@ -39,12 +39,20 @@ h1 {
 
   form {
     text-align: center;
+    overflow: auto;
+    overflow-y: hidden;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: baseline;
     opacity: 1;
     position: relative;
     margin-top: '100px';
-    padding-top: '20%';
+    padding-top: '25%';
     padding-left: '50%';
     margin-left: '50%';
+    padding-bottom: 5%;
+
     flex: 1;
 
     
@@ -53,3 +61,98 @@ h1 {
   ::placeholder{
     color: rgb(0, 6, 8);
   }
+  label{
+    display: inline;
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+  .subDivStyle{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+    justify-content: center ;
+  }
+  ul{
+    align-self: flex-start;
+    width: 100%;
+    align-content: flex-start;
+  }
+
+  .choosediv{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    
+
+  }
+  .chooseinput{
+    display: inline;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: min-content;
+ 
+  }
+  .chooselabel{
+    margin: 0;
+
+    display: inline;
+  }
+
+  .resizableInput{
+    width: 577px; height: 60px;
+
+  }
+
+
+
+  table{
+    width:100%;
+    table-layout: fixed;
+    background-color: rgba(84, 70, 70, 0.6);
+  }
+  .tbl-header{
+    background-color: rgba(84, 70, 70, 0.6);
+   }
+  .tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    background-color: rgba(84, 70, 70, 0.6);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #000000;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}

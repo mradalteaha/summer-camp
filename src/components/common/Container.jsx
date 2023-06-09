@@ -12,7 +12,7 @@ export default function Container(props){
         height:"60%",
         padding:50,
         borderRadius:'25px',
-        position:'absolute',
+        position:'relative',
         marginLeft:'50px',
         marginTop:'10%',
         
